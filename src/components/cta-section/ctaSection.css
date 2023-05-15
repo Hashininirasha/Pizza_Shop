@@ -1,0 +1,125 @@
+.cta-section {
+    max-width: 1440px;
+    max-height: 994px;
+    /* background: rgb(255, 255, 255); */
+    background: #af8169;
+    
+}
+
+.cta-container {
+    display: flex;
+    width: 1160px;
+    padding: 1.5rem 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-image img {
+    max-width: 720px;
+    min-width: auto;
+}
+
+.cta-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.cta-content p {
+    font-family: 'Poppins', sans-serif;
+    color: #F3BA5C;
+    font-size: 48px;
+}
+
+.cta-content a {
+    margin: 30px 0;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border: 1px solid #F3BA5C;
+    background: #F3BA5C;
+    border-radius: 13px;
+    padding: 0.5rem 3rem;
+}
+
+.cta-content a:hover {
+    background: #fff;
+    color: #F3BA5C;
+}
+
+/*Tablet Size*/
+@media (min-width: 768px) and (max-width: 990px) {  
+    
+    .cta-container {
+        display: flex;
+        width: 100vw;
+        padding: 1.5rem 0;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-image img {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .cta-content p {
+        margin: 1rem 0 0 0;
+    }
+}
+
+/*Mobile Landscape Size*/
+@media (min-width: 480px) and (max-width: 767px) {  
+    .cta-container {
+        display: flex;
+        width: 100vw;
+        padding: 1.5rem 0;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-image img {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .cta-content p {
+        margin: 1rem 0 0 0;
+        font-size: 40px;
+    }
+
+    .cta-content a {
+        font-size: 20px;
+    }
+}
+
+/*Mobile Portrait Size*/
+@media (min-width: 240px) and (max-width: 479px) {  
+    .cta-container {
+        display: flex;
+        width: 100vw;
+        padding: 1.5rem 0;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-image img {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .cta-content p {
+        margin: 1rem 0 0 0;
+        font-size: 28px;
+    }
+
+    .cta-content a {
+        font-size: 18px;
+        padding: 0.5rem 1.5rem;
+    }
+}
