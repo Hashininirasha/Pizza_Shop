@@ -15,10 +15,12 @@ const Footer = () => {
             <NavLink to='products'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
             >Products</NavLink>
-            
+            <NavLink to='login'
+              className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
+            >Login</NavLink>
         </nav>
         <div className="copyrights">
-          &copy; 2022 <Link to="/"></Link> - All Rights Reserved.
+          &copy; 2022 <Link to="/"> WebStylePress</Link> - All Rights Reserved.
         </div>
       </div>
     </footer>
