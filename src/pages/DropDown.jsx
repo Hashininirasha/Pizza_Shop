@@ -5,7 +5,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -52,23 +53,24 @@ export default function ControlledOpenSelect() {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-    <NavLink to="products/1">
+        
+    <NavLink to="products/LITE">
           <MenuItem>LITE</MenuItem>
     </NavLink>
 
-    <NavLink to="products/2">
+    <NavLink to="products/CLASSIC">
           <MenuItem>CLASSIC</MenuItem>
     </NavLink>
 
-    <NavLink to="products/1">
+    <NavLink to="products/SIGNATURE">
           <MenuItem>SIGNATURE</MenuItem>
     </NavLink>
 
-    <NavLink to="products/1">
+    <NavLink to="products/FAVORITE">
           <MenuItem>FAVORITE</MenuItem>
     </NavLink>
 
-    <NavLink to="products/1">
+    <NavLink to="products/APPETIZERS">
           <MenuItem>APPETIZERS</MenuItem>
     </NavLink>
         </Select>

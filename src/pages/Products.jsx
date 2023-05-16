@@ -24,8 +24,8 @@ const Products = () => {
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-text">{product.details}</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <Link to={`/products/${product.id}`} className="btn btn-primary btn-sm">MORE &#8594;</Link>
-                    </div>
+                      <Link to={`/products/${product.name}`} className="btn btn-primary btn-sm">MORE &#8594;</Link>
+                    </div>  
                   </div>
                 </div>
                 </div>

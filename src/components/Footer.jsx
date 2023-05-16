@@ -20,7 +20,7 @@ const Footer = () => {
             >Login</NavLink> */}
         </nav>
         <div className="copyrights">
-          &copy; 2022 <Link to="/"> WebStylePress</Link> - All Rights Reserved.
+          &copy; 2023 <Link to="/"> Hashini Munasinghe</Link> - All Rights Reserved.
         </div>
       </div>
     </footer>

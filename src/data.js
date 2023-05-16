@@ -3,6 +3,7 @@ const PRODUCTS = [
 		id: 1,
 		name: 'LITE',
 		image: require('./images/1.jpg'),
+		
 		details:
 			'Indulge in the Light Delight: LITE Pizza - A Guilt-Free Slice of Deliciousness!',
 	},
