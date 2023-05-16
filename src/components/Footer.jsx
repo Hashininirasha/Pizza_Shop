@@ -15,9 +15,9 @@ const Footer = () => {
             <NavLink to='products'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
             >Products</NavLink>
-            <NavLink to='login'
+            {/* <NavLink to='login'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-            >Login</NavLink>
+            >Login</NavLink> */}
         </nav>
         <div className="copyrights">
           &copy; 2022 <Link to="/"> WebStylePress</Link> - All Rights Reserved.

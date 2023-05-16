@@ -2,6 +2,7 @@ import React from 'react';
 import '../shared/shared.css';
 import { Hero } from '../components/hero-section/Hero';
 
+
 const Home = () => {
   return (
     <main>
@@ -16,6 +17,8 @@ const Home = () => {
       </p>
       <p>
       Come and visit us today and discover why we're the best pizza shop in Sri Lanka!
+
+ 
 
       <div>
           

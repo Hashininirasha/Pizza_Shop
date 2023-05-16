@@ -4,35 +4,35 @@ const PRODUCTS = [
 		name: 'LITE',
 		image: require('./images/1.jpg'),
 		details:
-			'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
+			'Indulge in the Light Delight: LITE Pizza - A Guilt-Free Slice of Deliciousness!',
 	},
 	{
 		id: 2,
 		name: 'CLASSIC',
-		image: require('./images/1.jpg'),
+		image: require('./images/2.jpg'),
 		details:
-			'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
+			'Timeless Temptation: CLASSIC Pizza - Savory Slices that Never Go Out of Style!',
 	},
 	{
 		id: 3,
 		name: 'SIGNATURE',
-		image: require('./images/1.jpg'),
+		image: require('./images/4.jpg'),
 		details:
-			'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
+			'Exquisite Masterpieces: SIGNATURE Pizza - Artfully Crafted Flavors to Satisfy Your Cravings!',
 	},
 	{
 		id: 4,
 		name: 'FAVORITE',
-		image: require('./images/1.jpg'),
+		image: require('./images/5.jpg'),
 		details:
-			'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
+			'Your Personal Favorite: FAVORITE Pizza - A Taste That Always Hits the Spot!',
 	},
 	{
 		id: 5,
-		name: 'SUPREME',
-		image: require('./images/1.jpg'),
+		name: 'APPETIZERS',
+		image: require('./images/3.jpg'),
 		details:
-			'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
+			'Start with Flavorful Bites: Irresistible Appetizers - The Perfect Prelude to Your Meal!',
 	},
 	
 ];

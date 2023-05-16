@@ -1,4 +1,5 @@
 import {Link, NavLink} from 'react-router-dom';
+import ControlledOpenSelect from '../pages/DropDown'
 
 const Header = () => {
   return (
@@ -17,12 +18,15 @@ const Header = () => {
             <NavLink to='about'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
             >About</NavLink>
+
             <NavLink to='products'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-            >Products</NavLink>
-            <NavLink to='login'
-              className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-            >Login</NavLink>
+            >Pizza
+            
+            <ControlledOpenSelect/>
+            </NavLink>
+
+           
           </nav>
 
         </div>
