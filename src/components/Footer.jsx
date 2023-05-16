@@ -1,5 +1,5 @@
 import {Link, NavLink} from 'react-router-dom';
-
+import FacebookIcon from '@material-ui/icons/Facebook';
 const Footer = () => {
   return (
     <footer className='footer'>
@@ -22,6 +22,7 @@ const Footer = () => {
         <div className="copyrights">
           &copy; 2023 <Link to="/"> Hashini Munasinghe</Link> - All Rights Reserved.
         </div>
+        <FacebookIcon></FacebookIcon>
       </div>
     </footer>
   )

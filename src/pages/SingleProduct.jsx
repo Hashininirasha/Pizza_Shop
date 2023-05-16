@@ -21,6 +21,10 @@ const SingleProduct = () => {
     localStorage.setItem('selectedTopping', topping);
   };
 
+  const filteredProducts = selectedTopping
+    ? PRODUCTS.filter((product) => product.topping === selectedTopping)
+    : PRODUCTS;
+
   return (
     <main>
       <div className="container content">
@@ -41,41 +45,33 @@ const SingleProduct = () => {
               ))}
             </Select>
           </FormControl>
-          {PRODUCTS.filter((product) => {
-            if (selectedTopping === '') {
-              return true;
-            } else {
-              return product.topping === selectedTopping;
-            }
-          }).map((product) => {
-            return (
-              <div className="col-lg-4" key={product.id}>
-                <div className="card">
-                  <div className="img-wrap">
-                    <img src={product.image} alt="" className="fixed-size-image" />
-                  </div>
-                  <div className="card-body">
-                    <h5 className="card-title">{product.name}</h5>
-                    <p className="card-text">{product.details}</p>
+          {filteredProducts.map(({ id, image, name, details, topping, price }) => (
+            <div className="col-lg-4" key={id}>
+              <div className="card">
+                <div className="img-wrap">
+                  <img src={image} alt="" className="fixed-size-image" />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">{name}</h5>
+                  <p className="card-text">{details}</p>
+                  <span>
+                    Topping: <strong className="price">{topping}</strong>
+                  </span>
+
+                  <div className="d-flex justify-content-between align-items-center">
                     <span>
-                      Topping: <strong className="price">{product.topping}</strong>
+                      Price: <strong className="price">{price}</strong>
                     </span>
 
-                    <div className="d-flex justify-content-between align-items-center">
-                      <span>
-                        Price: <strong className="price">{product.price}</strong>
-                      </span>
-
-                      <Link to={`/products/${product.id}`} className="btn btn-primary btn-sm">
-                        VIEW &#8594;
-                      </Link>
-                      <div></div>
-                    </div>
+                    <Link to={`/products/${id}`} className="btn btn-primary btn-sm">
+                      VIEW &#8594;
+                    </Link>
+                    <div></div>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </main>

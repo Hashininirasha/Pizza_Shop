@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Card, CardHeader, CardContent, CardActions, Button, TextField } from '@mui/material';
+
 
 const Login = () => {
     const [username, usernameupdate] = useState('');
@@ -81,30 +83,35 @@ sessionStorage.clear();
         return result;
     }
     return (
+       
+        <div className="row" style={{ backgroundImage: `url("https://hdwallpaperim.com/wp-content/uploads/2017/09/17/60012-food-pizza-cheese.jpg")`, backgroundSize: 'cover' }}>
+      
         <div className="row">
-            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
-                <form onSubmit={ProceedLogin} className="container">
-                    <div className="card">
-                        <div className="card-header">
-                            <h2>User Login</h2>
-                        </div>
-                        <div className="card-body">
-                            <div className="form-group">
-                                <label>User Name <span className="errmsg">*</span></label>
-                                <input value={username} onChange={e => usernameupdate(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group">
-                                <label>Password <span className="errmsg">*</span></label>
-                                <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control"></input>
-                            </div>
-                        </div>
-                        <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Login</button> 
-                                                    </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+  <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+    <form onSubmit={ProceedLogin} className="container">
+      <Card>
+        <CardHeader>
+          <h2>User Login</h2>
+        </CardHeader>
+        <CardContent>
+          <div className="form-group">
+            <label>User Name <span className="errmsg">*</span></label>
+            <TextField value={username} onChange={e => usernameupdate(e.target.value)} variant="outlined" className="form-control" />
+          </div>
+          <div className="form-group">
+            <label>Password <span className="errmsg">*</span></label>
+            <TextField type="password" value={password} onChange={e => passwordupdate(e.target.value)} variant="outlined" className="form-control" />
+          </div>
+        </CardContent>
+        <CardActions>
+          <Button type="submit" variant="contained" color="primary">Login</Button>
+        </CardActions>
+      </Card>
+    </form>
+  </div>
+</div>
+</div>
+
     );
 }
 
