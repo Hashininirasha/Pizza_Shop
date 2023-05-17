@@ -54,23 +54,23 @@ export default function ControlledOpenSelect() {
             <em>None</em>
           </MenuItem>
         
-    <NavLink to="products/LITE">
+    <NavLink to="products/1">
           <MenuItem>LITE</MenuItem>
     </NavLink>
 
-    <NavLink to="products/CLASSIC">
+    <NavLink to="products/2">
           <MenuItem>CLASSIC</MenuItem>
     </NavLink>
 
-    <NavLink to="products/SIGNATURE">
+    <NavLink to="products/3">
           <MenuItem>SIGNATURE</MenuItem>
     </NavLink>
 
-    <NavLink to="products/FAVORITE">
+    <NavLink to="products/4">
           <MenuItem>FAVORITE</MenuItem>
     </NavLink>
 
-    <NavLink to="products/APPETIZERS">
+    <NavLink to="products/5">
           <MenuItem>APPETIZERS</MenuItem>
     </NavLink>
         </Select>
