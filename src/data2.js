@@ -55,7 +55,7 @@ const PRODUCTS = [
 		name: 'BBQ Chicken',
 		image: require('./images/4.jpg'),
         price: 'Rs.1220.00',
-        topping: 'onions, tomato, green chillies & Mozzarella.',
+        topping: 'BBQ chicken, onions & cheese ',
         category: "CLASSIC",
 		details:
 			'BBQ chicken accompanied by spicy jalapenos, onions and a double layer of cheese',

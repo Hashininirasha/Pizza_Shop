@@ -14,7 +14,7 @@ const Footer = () => {
             >About</NavLink>
             <NavLink to='products'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-            >Products</NavLink>
+            >Pizza</NavLink>
             {/* <NavLink to='login'
               className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
             >Login</NavLink> */}

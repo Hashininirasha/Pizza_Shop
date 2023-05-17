@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { Card, CardContent, CardMedia, Button } from '@material-ui/core';
 import PRODUCTS from '../data2';
+import { makeStyles } from '@material-ui/core/styles';
 import '../components/projectSize/proSize.css'
 import '../components/projectSize/prostyle.css'
 
