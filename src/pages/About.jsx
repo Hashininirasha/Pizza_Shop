@@ -9,7 +9,7 @@ const About = () => {
 <div className="container content">
  
      <p>
-     Introducing Slice of Pizzeria! Established in 2023, Slice of Paradise Pizzeria aims to become Sri Lanka's go-to destination for delectable fusion pizzas and delightful cocktails. Inspired by the love for great food and a passion for creating a welcoming atmosphere, our pizzeria is the perfect spot to unwind and indulge in a culinary adventure.
+     Introducing Slice of Pizzeria! Established in 2023, Slice of Pizzeria aims to become Sri Lanka's go-to destination for delectable fusion pizzas and delightful cocktails. Inspired by the love for great food and a passion for creating a welcoming atmosphere, our pizzeria is the perfect spot to unwind and indulge in a culinary adventure.
      </p>
 
     <p>
