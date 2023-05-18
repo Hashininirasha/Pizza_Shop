@@ -9,9 +9,10 @@ export const Hero = () => {
                 <HeroHeading />
                 <img
                     className="hero-section-image"
-                    src='./assets/images/hero-pizza.jpg' 
+                    src="https://thelionsroarmhsn.com/wp-content/uploads/2015/04/Pepperoni_1.jpg"
                     alt='pizza'    
                 />
+                {/* <div style={{backgroundImage: URL("https://thelionsroarmhsn.com/wp-content/uploads/2015/04/Pepperoni_1.jpg")}}></div> */}
             </div>
         </section>
     )
